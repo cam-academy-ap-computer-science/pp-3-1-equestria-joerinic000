@@ -32,15 +32,21 @@ public class Equestria {
 	public static final int BADY= 22;
 
 	public static final int PONYX = 16;
-	public static final int PONEYY = 13;
+	public static final int PONYY = 13;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 double distance1 = calcMethod(BALTX, BALTY, MANEX, MANEY);
+		 double distance2 = calcMethod(LOSPX, LOSPY, NEIGX, NEIGY);
+		 double distance3 = calcMethod(	BADX, BADY, PONYX, PONYY);
+		 System.out.println("The distance between Baltimare and Manehatten is " + distance1);
+		 System.out.println("The distance between Los Pegasus and Neigagra Falls is " + distance2);
+		 System.out.println("The distance between Badlands and Ponyville is " + distance3);
 	}
 	public static double calcMethod(int a, int b, int c, int d) {
-		
-		double distance = Math.sqrt()
+		double x = (c - a) * (c - a);
+		double y = (d - b) * (d - b);
+		double distance = Math.sqrt((x + y));
 		return distance;
 
 	}
